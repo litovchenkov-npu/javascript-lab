@@ -18,6 +18,6 @@ function Employee(firstName, lastName, birthDate, position) {
     }
 }
 
-const myEmployee = new Employee('Jane', 'Doe', new Date(1971, 4, 12), 'Engineer');
+const myEmployee = new Employee('Jane', 'Doe', new Date(1971, 4, 12).toLocaleDateString(), 'Engineer');
 
 myEmployee.getFullInfo();

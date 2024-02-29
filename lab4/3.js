@@ -8,6 +8,6 @@ function Person(firstName, lastName, birthDate) {
     }
 }
 
-const myPerson = new Person('Jane', 'Doe', new Date(1971, 4, 12));
+const myPerson = new Person('Jane', 'Doe', new Date(1971, 4, 12).toLocaleDateString());
 
 myPerson.getFullInfo();
