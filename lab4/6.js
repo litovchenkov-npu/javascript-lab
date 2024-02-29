@@ -18,7 +18,7 @@ function ObservedPerson(person) {
     }
 }
 
-const myPerson = new Person('Jane', 'Doe', new Date(1971, 4, 12))
+const myPerson = new Person('Jane', 'Doe', new Date(1971, 4, 12).toLocaleDateString())
 const myObservedPerson = new ObservedPerson(myPerson);
 
 myObservedPerson.getFullInfo();
