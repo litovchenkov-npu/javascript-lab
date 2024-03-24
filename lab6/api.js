@@ -24,7 +24,6 @@ const users = [
     { firstname: 'Harper', lastname: 'Martin', score: 80 }
 ];
 
-// Функція для вибору випадкових елементів з масиву з затримкою 1 секунда
 function fetchUsers() {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -34,13 +33,10 @@ function fetchUsers() {
                 randomUsers.push(shuffledUsers[i]);
             }
             resolve(randomUsers);
-        }, 1000); // Затримка 1 секунда
+        }, 1000);
     });
 }
 
-// Функція для отримання перших 5 елементів масиву користувачів
 function getNewUsers() {
     return users.slice(0, 5);
 }
-
-// export { fetchUsers, getNewUsers };
